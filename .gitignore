@@ -1,0 +1,11 @@
+# block all
+*
+!/*/
+!/.gitignore
+
+# whitelist
+!/src/*.ts
+!/package.json
+!/pnpm-lock.yaml
+!/tsconfig.json
+!/Pulumi*.yaml
