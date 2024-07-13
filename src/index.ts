@@ -33,4 +33,5 @@ const domainAssociation = new aws.amplify.DomainAssociation('domain association'
     prefix: 'game-of-life',
   }],
   waitForVerification: true,
+  certificateSettings: { type: 'AMPLIFY_MANAGED' }
 })
