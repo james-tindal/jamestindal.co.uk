@@ -20,7 +20,7 @@ const amplifyApp = new aws.amplify.App('amplify-game-of-life', {
   `
 })
 
-const mainBranch = new aws.amplify.Branch('amplify main branch', {
+const mainBranch = new aws.amplify.Branch('amplify main branch', {  
   appId: amplifyApp.id,
   branchName: 'main'
 })
@@ -32,7 +32,5 @@ const domainAssociation = new aws.amplify.DomainAssociation('domain association'
     branchName: mainBranch.branchName,
     prefix: 'game-of-life',
   }],
-  waitForVerification: true
+  waitForVerification: true,
 })
-
-export const amplifyAppId = domainAssociation.id
