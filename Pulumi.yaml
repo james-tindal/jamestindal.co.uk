@@ -4,4 +4,5 @@ runtime:
   options:
     packagemanager: pnpm
     # See https://github.com/TypeStrong/ts-node/issues/1007
-    nodeargs: "--loader ts-node/esm --no-warnings"
+    # https://github.com/TypeStrong/ts-node/discussions/1781
+    nodeargs: "--loader ts-node/esm --no-warnings --experimental-specifier-resolution=node"
