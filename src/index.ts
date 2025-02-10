@@ -1,2 +1,9 @@
+import * as pulumi from '@pulumi/pulumi'
+
 import './game-of-life'
-export * from './angular-laravel-cms'
+
+const config = new pulumi.Config
+const runAngularLaravelCms = config.getBoolean('run-angular-laravel-cms') ?? true
+
+if (runAngularLaravelCms)
+  import('./angular-laravel-cms')

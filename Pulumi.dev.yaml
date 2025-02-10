@@ -1,4 +1,5 @@
 config:
   aws:region: eu-west-2
+  run-angular-laravel-cms: false
 environment:
   - jamestindal.co.uk
